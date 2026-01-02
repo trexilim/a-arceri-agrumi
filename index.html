@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home - A. Arceri</title>
+    <link rel="shortcut icon" href="../Media/Logos/logo_cut.png" />
+    <link rel="stylesheet" type="text/css" href="../Stylesheets/header_AA.css" />
+    <link rel="stylesheet" type="text/css" href="../Stylesheets/content_AA.css" />
+    <link rel="stylesheet" type="text/css" href="../Stylesheets/general_AA.css" />
+</head>
+
+<body>
+<div id="page">
+    <div id="languageMenu">
+        <div class="languageLink"><a href="../EN/Home_EN.html">English</a></div>
+        <div class="languageLink"><a href="../DE/Home_DE.html">Deutsch</a></div>
+    </div>
+
+    <div id="header">
+        <div align="center"><img></div>
+    </div>
+
+    <div id="menuBar">
+        <div class="menuLink"><on href="Home_IT.html">Home</on></div>
+        <div class="menuLink"><a href="Company_IT.html">Azienda</a></div>
+        <div class="linkCluster">
+            <div class="link"><a>Prodotti</a></div>
+            <div class="subLink"><a href="ProductsIT/Clementine_IT.html">Clementine</a></div>
+            <div class="subLink"><a href="ProductsIT/Arance_IT.html">Arance</a></div>
+            <div class="subLink"><a href="ProductsIT/Tacle_IT.html">Tacle</a></div>
+            <div class="subLink"><a href="ProductsIT/Mandarini_IT.html">Mandarini</a></div>
+            <div class="subLink"><a href="ProductsIT/Calendar_IT.html">Calendario</a></div>
+            <div class="subLink"><a>Packaging</a></div>
+        </div>
+        <div class="menuLink"><a href="Certificates_IT.html">Certificazioni</a></div>
+        <div class="menuLink"><a href="Gallery_IT.html">Galleria</a></div>
+        <div class="menuLink"><a href="Contacts_IT.html">Contatti</a></div>
+    </div>
+
+    <div id="spacer"></div>
+
+    <div id="content">
+        <div class="contentBar" style=" height: 595px">
+            <div class="w3-content w3-display-container" style="height: 100%">
+                <img class="mySlides" src="../Media/DSC06713.JPG" style="height: 100%">
+                <img class="mySlides" src="../Media/DSC06717.JPG" style="height: 100%">
+            </div>
+
+            <script class="Diashow">
+                var myIndex = 0;
+                carousel();
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) {myIndex = 1}
+                    x[myIndex-1].style.display = "block";
+                    setTimeout(carousel, 2000); // Change image every 2 seconds
+                }
+            </script>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footerElementL"><img src="../Media/Logos/LOGO_2.png" height="33px" style="padding: 0px"></div>
+        <div class="footerElement">A. Arceri Società Agricola s.s.</div>
+        <div class="footerElement">P. IVA 02486630805</div>
+        <div class="footerElement">© 2020 Diritti riservati</div>
+    </div>
+</div>
+
+
+
+</body>
+</html>

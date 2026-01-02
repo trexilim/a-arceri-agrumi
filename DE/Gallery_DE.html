@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fotogalerie - A. Arceri</title>
+    <link rel="stylesheet" type="text/css" href="../Stylesheets/header_AA.css" />
+    <link rel="stylesheet" type="text/css" href="../Stylesheets/content_AA.css" />
+    <link rel="stylesheet" type="text/css" href="../Stylesheets/general_AA.css" />
+</head>
+<body>
+<div id="page">
+    <div id="languageMenu">
+        <div class="languageLink"><a href="../IT/Gallery_IT.html">Italiano</a></div>
+        <div class="languageLink"><a href="../EN/Gallery_EN.html">English</a></div>
+    </div>
+
+    <div id="header">
+        <div align="center"><img></div>
+    </div>
+
+    <div id="menuBar">
+        <div class="menuLink"><a href="Home_DE.html">Home</a></div>
+        <div class="menuLink"><a href="History_DE.html">Geschichte</a></div>
+        <div class="menuLink"><a href="Products_DE.html">Produkte</a></div>
+        <div class="menuLink"><on href="Gallery_DE.html">Fotogalerie</on></div>
+        <div class="menuLink"><a href="Contacts_DE.html">Kontakt</a></div>
+    </div>
+    <div id="pageContent">
+
+        <div class="articleTitle"></div>
+
+        <div class="articleContent">
+            <h2>
+                <div align="center">
+                    <img class="mySlides" src="../Media/4.JPG" style="width:70%">
+                    <img class="mySlides" src="../Media/2.JPG" style="width:35%">
+                    <img class="mySlides" src="../Media/3.JPG" style="width:35%">
+                </div>
+
+                <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+                <style>
+                    .mySlides {display:none;}
+                </style>
+
+                <script class="Diashow">
+                    var myIndex = 0;
+                    carousel();
+                    function carousel() {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides");
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        myIndex++;
+                        if (myIndex > x.length) {myIndex = 1}
+                        x[myIndex-1].style.display = "block";
+                        setTimeout(carousel, 2000); // Change image every 2 seconds
+                    }
+                </script>
+            </h2>
+        </div>
+
+
+    </div>
+    <div id="footer">
+            Contact:<br>
+            Email: a.arceri@inwind.it<br>
+            Phone: +39 0966 900982<br>
+            Mobile: +39 335 6213531<br>
+            Mobile (Intnl.): +39 338 6269583<br>
+            <br>
+            A. Arceri Società Agricola s.s.,
+            C.da Imbiscuso,
+            89023 Laureana di Borrello (RC), ITALY
+    </div>
+</div>
+
+
+<h1 align="center"></h1>
+<p align="center">Our website is currently under construction.</p>
+<p></p>
+<p align="center">
+    A. Arceri Società Agricola s.s.,
+    C.da Imbiscuso,
+    89023 Laureana di Borrello (RC), ITALY
+</p>
+
+
+</body>
+</html>
